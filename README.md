@@ -21,7 +21,7 @@
 - **收藏夹与导出**　点行尾书签保存整句。在「收藏夹」里可写批注、搜索笔记，或把日中原句和批注一起导出。生词本、收藏夹、最近查过都支持 UTF-8 CSV 和 TSV。
 - **备份与设置**　关闭游戏后，备份 `mahoyo-learning/` 下的 `settings.ini`、`favorites.tsv`、`personal-words.dat`、`recent-lookups.tsv` 和 `sentence-notes.tsv`。迁移到同版读本时放回同名目录。`[study]` 中的 `record_lookups` 和 `parallel_highlight` 默认开启，设为 0 可分别关闭记录或对应高亮。`ui_japanese_face` 可指定已安装的日文字体。
 
-![在补释义窗口查看小学馆对「得体」的释义](verification/release-20261120/小学馆-补释义.png)
+<img width="1536" height="864" alt="魔夜读本-投稿封面" src="https://github.com/user-attachments/assets/8e79c867-70f3-4867-867b-4ab6177f63e8" />
 
 ## 开发与来源
 
