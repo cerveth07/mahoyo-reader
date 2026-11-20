@@ -1,0 +1,15 @@
+* text=auto
+*.py text eol=lf
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+*.md text eol=lf
+*.ctd -text
+*.png binary
+*.jpg binary
+*.gz binary
+*.zip binary
+/corpus/* -text
+/layout-audit/manual-plans.json -text
+/data-prep/reviewed-text-pairs.json text eol=lf
+/data-prep/reading-overrides.json text eol=lf
+/data-prep/reviewed-word-cards.jsonl text eol=lf

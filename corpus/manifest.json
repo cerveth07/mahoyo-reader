@@ -1,0 +1,17 @@
+{
+  "native_text_keys": 24134,
+  "index_convention": "zero-based; preserve blank internal lines; JA terminal CRLF is not an extra key",
+  "steam_ja_matches_reference_full_table": true,
+  "jlpt_note_count": 9316,
+  "jlpt_counts": {
+    "N1": 6446,
+    "N2": 2870
+  },
+  "files": {
+    "steam-ja.ctd": "bd74b123e029e23bdb608c7911e5c9f1d1a662d1e9bd54b5672d794b82598ab6",
+    "sumisora-steam-zh.txt": "2f2e40ac1d875c4e5b551334be94c2b9e3a51fd89b434fdffe932544308e64f9",
+    "anki-jlpt-n1-n2.json": "424519283779e0b98ad36cabaf646e87e85b1a107894ea51e1922826590818c5"
+  },
+  "translation_commit": "6328b99d37c9d9e89cb4a9fbac83f60789d599a9",
+  "rights": "The project owner confirmed on 2026-11-20 that the story text, translation and Anki entries may be distributed with Mahoyo Yomibito. These materials and game captures retain their original rights."
+}

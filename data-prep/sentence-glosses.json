@@ -1,0 +1,17 @@
+[
+  {"keys":[85],"expected":"一定就是在某一天轻易地被小红帽<打败|杀死>吧―――","with_caption":true,"gloss":"「退治」写作“击退、打败”，读音却是「ころ」，接上后文就是「殺される」。“被小红帽打败”也暗指“被小红帽杀死”。"},
+  {"keys":[1369],"expected":"Hey diddle diddle,","gloss":"嗨，真奇妙，真奇妙。"},
+  {"keys":[1370],"expected":"The cat and the fiddle,","gloss":"小提琴和猫，"},
+  {"keys":[1378],"expected":"The cow jump'd over the moon,","gloss":"牛从月亮上跳过，"},
+  {"keys":[1379],"expected":"The little dog laugh'd","gloss":"小狗笑了起来，"},
+  {"keys":[1393],"expected":"To see such craft,","gloss":"看见这般好本领，"},
+  {"keys":[1394],"expected":"And the dish ran away with the spoon.","gloss":"盘子跟着汤勺跑了。"},
+  {"keys":[1502,1539,1541,1610,1616],"expected":"London Bridge is broken down,","gloss":"伦敦桥倒塌了，"},
+  {"keys":[1503,1540],"expected":"Broken down,broken down.","gloss":"倒塌了，倒塌了。"},
+  {"keys":[1611],"expected":"Broken down,broken down―――","gloss":"倒塌了，倒塌了―――"},
+  {"keys":[1542,1575,1617],"expected":"My fair lady.","gloss":"我美丽的女士。"},
+  {"keys":[1572,1574],"expected":"Build it up with wood and clay,","gloss":"用木头和泥土把桥建起来，"},
+  {"keys":[1573],"expected":"Wood and clay,Wood and clay,","gloss":"木头和泥土，木头和泥土，"},
+  {"keys":[5150],"expected":"“Vivo in somno. Solitarie putresco in inferis.","gloss":"我活在睡梦之中。孤独地在土中腐朽。"},
+  {"keys":[5151],"expected":"Hic dies meus obitus dies, et meus nativus dies. Te obeam.”","gloss":"今天是我的忌日，也是我的生日。现在，我要去与你相会。"}
+]

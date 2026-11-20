@@ -1,0 +1,335 @@
+{
+  "source_sha256": "5d397244e3c46f8453a77dfbdb9f1f04086e4d603f0fe0a21398140ac497441a",
+  "source_commit": "6328b99d37c9d9e89cb4a9fbac83f60789d599a9",
+  "fingerprint": "FNV-1a 64-bit of original UTF-16LE bytes; checked with both string lengths",
+  "offsets": "UTF-16 code units in plain JA/CN; end-exclusive; original wording and order retained",
+  "plans": [
+    {
+      "index": 5012,
+      "ja_length": 37,
+      "zh_length": 44,
+      "ja_fnv64": "43fc3f81ad97e9a9",
+      "zh_fnv64": "74367a278165d0f2",
+      "mode": "highlight-only",
+      "anchors": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          26
+        ],
+        [
+          30,
+          33
+        ],
+        [
+          37,
+          44
+        ]
+      ],
+      "rationale": "TASK2 N5 confirms these three clauses. The first Chinese comma has no Japanese boundary. Ignore leading indentation for the lookup, then restore its UTF-16 offsets."
+    },
+    {
+      "index": 134,
+      "ja_length": 25,
+      "zh_length": 22,
+      "ja_fnv64": "62bc16c5048cada9",
+      "zh_fnv64": "222bdf8e6ec9831d",
+      "anchors": [
+        [
+          0,
+          0
+        ],
+        [
+          25,
+          22
+        ]
+      ],
+      "mode": "whole-record caption at first source row when default readable font fits",
+      "rationale": "Japanese afterthought subject is moved forward in Chinese; splitting both commas would falsely align the subject and predicate. Runtime native layout is already one JA row. For narrow layouts, one complete CN caption refers to the whole JA sentence block."
+    },
+    {
+      "index": 234,
+      "ja_length": 30,
+      "zh_length": 22,
+      "ja_fnv64": "765643629b9935bc",
+      "zh_fnv64": "fa17229c9622c244",
+      "mode": "whole",
+      "rationale": "An isolated Japanese grammatical tail should not split the Chinese location noun.",
+      "anchors": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          22
+        ]
+      ],
+      "readability_guard": "Only group when the complete translation fits the first actual row at the unchanged default font."
+    },
+    {
+      "index": 250,
+      "ja_length": 47,
+      "zh_length": 39,
+      "ja_fnv64": "268c035402692dd1",
+      "zh_fnv64": "af192f51351279f5",
+      "mode": "whole",
+      "rationale": "Chinese moves the thinking report before its content; retain one complete sentence caption rather than reverse-align two source clauses.",
+      "anchors": [
+        [
+          0,
+          0
+        ],
+        [
+          47,
+          39
+        ]
+      ],
+      "readability_guard": "Only group when the complete translation fits the first actual row at the unchanged default font."
+    },
+    {
+      "index": 267,
+      "ja_length": 57,
+      "zh_length": 40,
+      "ja_fnv64": "4da602edd427d71a",
+      "zh_fnv64": "2d64c80f75b71057",
+      "mode": "question",
+      "rationale": "Complete self-question before the renewed-resolve narrative. Fold only the reviewed final grammatical tail when the default font fits.",
+      "anchors": [
+        [
+          0,
+          0
+        ],
+        [
+          26,
+          20
+        ],
+        [
+          42,
+          28
+        ],
+        [
+          57,
+          40
+        ]
+      ],
+      "source_boundary_snaps": [
+        [
+          27,
+          26
+        ],
+        [
+          28,
+          26
+        ],
+        [
+          29,
+          26
+        ]
+      ],
+      "merge_tail_from": 54
+    },
+    {
+      "index": 322,
+      "ja_length": 42,
+      "zh_length": 34,
+      "ja_fnv64": "45199c17cb96eeed",
+      "zh_fnv64": "c1f1988f135451ab",
+      "anchors": [
+        [
+          0,
+          0
+        ],
+        [
+          28,
+          24
+        ],
+        [
+          42,
+          34
+        ]
+      ],
+      "source_boundary_snaps": [
+        [
+          29,
+          28
+        ]
+      ],
+      "rationale": "Pair the complete quoted proposition, including Chinese dash, with Japanese before its reporting particle; pair the following wish/complaint reporting clause as a unit. The Chinese internal comma is not that boundary."
+    },
+    {
+      "index": 400,
+      "ja_length": 30,
+      "zh_length": 17,
+      "ja_fnv64": "cf46b5ac523f3145",
+      "zh_fnv64": "34bee5163f92846e",
+      "mode": "whole",
+      "rationale": "The tiny Japanese nominal ending has no independent Chinese line; keep the short adjective intact.",
+      "anchors": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          17
+        ]
+      ],
+      "readability_guard": "Only group when the complete translation fits the first actual row at the unchanged default font."
+    },
+    {
+      "index": 485,
+      "ja_length": 30,
+      "zh_length": 29,
+      "ja_fnv64": "3b09baebd4d5a08c",
+      "zh_fnv64": "016200b8c7125834",
+      "mode": "whole",
+      "rationale": "The native last row contains only a Japanese grammatical/counting fragment; keep the complete Chinese reporting verb intact.",
+      "anchors": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          29
+        ]
+      ],
+      "readability_guard": "Only group when the complete translation fits the first actual row at the unchanged default font."
+    },
+    {
+      "index": 500,
+      "ja_length": 56,
+      "zh_length": 47,
+      "ja_fnv64": "e3b5d7569bd9d0e6",
+      "zh_fnv64": "e69bc82d1aa7f42e",
+      "mode": "tail",
+      "rationale": "Preserve first thought and corrective/reporting thought as two captions; merge only the isolated final Japanese suffix at unchanged default font.",
+      "anchors": [
+        [
+          0,
+          0
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          31,
+          29
+        ],
+        [
+          34,
+          31
+        ],
+        [
+          43,
+          40
+        ],
+        [
+          56,
+          47
+        ]
+      ],
+      "source_boundary_snaps": [
+        [
+          27,
+          31
+        ],
+        [
+          28,
+          31
+        ],
+        [
+          29,
+          31
+        ],
+        [
+          30,
+          31
+        ],
+        [
+          44,
+          43
+        ]
+      ],
+      "merge_tail_from": 54
+    },
+    {
+      "index": 651,
+      "ja_length": 31,
+      "zh_length": 20,
+      "ja_fnv64": "3819961e4b926692",
+      "zh_fnv64": "f17c4496f2fc5fab",
+      "mode": "whole",
+      "rationale": "Chinese places the hand-gesture narration before the implied command; keep the sentence as a group.",
+      "anchors": [
+        [
+          0,
+          0
+        ],
+        [
+          31,
+          20
+        ]
+      ],
+      "readability_guard": "Only group when the complete translation fits the first actual row at the unchanged default font."
+    },
+    {
+      "index": 694,
+      "ja_length": 54,
+      "zh_length": 40,
+      "ja_fnv64": "5d62c0f41c823c54",
+      "zh_fnv64": "7a42412bb8a18d0e",
+      "mode": "whole",
+      "rationale": "Chinese moves the wondering narration before the thought; one sentence caption avoids inverted proposition/report pairs.",
+      "anchors": [
+        [
+          0,
+          0
+        ],
+        [
+          54,
+          40
+        ]
+      ],
+      "readability_guard": "Only group when the complete translation fits the first actual row at the unchanged default font."
+    },
+    {
+      "index": 967,
+      "ja_length": 40,
+      "zh_length": 36,
+      "ja_fnv64": "a9c0a005af36798f",
+      "zh_fnv64": "d5bfc9b4e9599fc4",
+      "anchors": [
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          28,
+          25
+        ],
+        [
+          40,
+          36
+        ]
+      ],
+      "source_boundary_snaps": [
+        [
+          29,
+          28
+        ]
+      ],
+      "rationale": "Pair concessive opener, entire negative proposition, and gaze-reporting clause separately. Chinese expands the proposition into two internal clauses; do not map its second comma to the Japanese reporting boundary."
+    }
+  ],
+  "reviewed_plan_count": 11
+}

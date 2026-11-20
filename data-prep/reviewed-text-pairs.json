@@ -1,0 +1,130 @@
+{
+  "translation_commit": "6328b99d37c9d9e89cb4a9fbac83f60789d599a9",
+  "swaps": [
+    {
+      "keys": [
+        21091,
+        21092
+      ],
+      "expected_japanese": [
+        "　と。",
+        "「おや？　新しい迷子ですか？」"
+      ],
+      "reason": "澄空表中这两条顺序相反。日文先写叙述转折，再由修女发问。对照独立的 Steam 中文表核实话者和顺序，保留澄空译句原文。"
+    }
+  ],
+  "caption_edits": [
+    {
+      "key": 48,
+      "expected_japanese": "　悲しくて混乱していたのか、正直、今でも分からない。",
+      "expected_chinese": "　还是由于悲伤而混乱了呢？老实说，她直到现在都不清楚。",
+      "replacement": "　还是因为伤心乱了方寸呢？老实说，直到现在也说不清。",
+      "reason": "承接上句的两个猜测，沿用日文省略主语的叙述。"
+    },
+    {
+      "key": 7205,
+      "expected_japanese": "「青子の事だから、時計台ごと私を焼き払いにくるかと思ったけど」",
+      "expected_chinese": "“真遗憾。本来我还以为青子会把我连钟楼一起摧毁呢。”",
+      "replacement": "“以青子的性子，我还以为她会把我连同钟楼一起烧了呢。”",
+      "reason": "按当前日文补出青子的性子和烧毁的动作，删去本句日文未见的开场白。"
+    },
+    {
+      "key": 16924,
+      "expected_japanese": "「<[swel]|ソウ>―――」",
+      "expected_chinese": "“<[swel]|swel>―――”",
+      "replacement": "“索―――”",
+      "reason": "ソウ是被打断的起音，区别于后文念全的ソウェル。"
+    },
+    {
+      "key": 16933,
+      "expected_japanese": "「<[swel]|ソウェル>―――！」",
+      "expected_chinese": "“<[swel]|swel>―――！”",
+      "replacement": "“索韦尔―――！”",
+      "reason": "按ソウェル音译，中文层不显示内部图元名。"
+    },
+    {
+      "key": 16955,
+      "expected_japanese": "「―――<[eywz]|エイワズ>！」",
+      "expected_chinese": "“―――<[eywz]|eiwaz>！”",
+      "replacement": "“―――艾瓦兹！”",
+      "reason": "按エイワズ音译，保留破折号和喊声。"
+    },
+    {
+      "key": 17242,
+      "expected_japanese": "「<[ansz]|アンサズ>、<[swel]|ソウェル>、<[ingz]|イングズ>ッ！」",
+      "expected_chinese": "“<[ansz]|ansz>、<[swel]|swel>、<[ingz]|ingz>！”",
+      "replacement": "“安萨兹、索韦尔、英格兹！”",
+      "reason": "按列举顺序音译三次咏唱，保持ソウェル的前后写法一致。"
+    },
+    {
+      "key": 21342,
+      "expected_japanese": "　その周囲で騒いでいるのは",
+      "expected_chinese": "　在她周围吵吵嚷嚷的除了",
+      "replacement": "　在她周围吵吵嚷嚷的，有",
+      "reason": "用可接人物列举的领句，顺接两处同文脚本键。"
+    },
+    {
+      "key": 21343,
+      "expected_japanese": "芳助と、",
+      "expected_chinese": "芳助",
+      "replacement": "芳助，",
+      "reason": "与下一处同文日文采用相同的列举停顿，保留独立脚本键。"
+    },
+    {
+      "key": 21344,
+      "expected_japanese": "芳助と、",
+      "expected_chinese": "芳助之外，",
+      "replacement": "芳助，",
+      "reason": "同文同译；接下句揭晓第二位人物。"
+    },
+    {
+      "key": 21345,
+      "expected_japanese": "意外なコトに山城先生だった。",
+      "expected_chinese": "居然还有山城老師。",
+      "replacement": "居然还有山城老师。",
+      "reason": "相邻收句只校正简体字形。"
+    },
+    {
+      "key": 21493,
+      "expected_japanese": "　爆発もとは見あたらないけど……ユリヒコ、爆弾で遊ぶ性癖があったとか？　まあ、芸術家らしいけど」",
+      "expected_chinese": "　虽然没有看到爆炸点……由里彦是不是有爱玩炸弹的癖好啊？　哦，这倒挺有艺术家风范。就像那个谁，太郎•冈本？”",
+      "replacement": "　没看见爆炸点……由里彦有玩炸弹的癖好？　嗯，倒也像艺术家的作风。”",
+      "reason": "按当前日文保留玩炸弹和艺术家的玩笑；原句没有点名冈本太郎。"
+    },
+    {
+      "key": 14411,
+      "expected_japanese": "「―――、",
+      "expected_chinese": "“―――、",
+      "replacement": "“―――",
+      "reason": "保留有珠开口前的停顿，让下一条补回的「嗯哼」自然接到破折号后。"
+    },
+    {
+      "key": 14412,
+      "expected_japanese": "ぽこ」",
+      "expected_chinese": "”",
+      "replacement": "嗯哼。”",
+      "reason": "补回有珠发出的一声，与后句清嗓子的动作区分。官中同处作「嗯哼」。"
+    },
+    {
+      "key": 19792,
+      "expected_japanese": "アレ！？",
+      "expected_chinese": "！？……",
+      "replacement": "咦！？",
+      "reason": "补出罗宾突然发现不对时的感叹。"
+    },
+    {
+      "key": 23570,
+      "expected_japanese": "　あれがわたしの家族だと思うと死にたくなるが、そんなのは小学校から慣れっこなのでぐっと耐えた。",
+      "expected_chinese": "　虽然一想到那就是我的家人，总有一种想死的冲动，不过因为从小学开始就一直这样所以也习惯了。",
+      "replacement": "　一想到那就是我的家人，我就想死。不过这种事从小学起就见惯了，这回我也忍了下来。",
+      "reason": "保留金鹿第一人称的口吻，补回句尾「ぐっと耐えた」的动作。"
+    },
+    {
+      "key": 4165,
+      "expected_japanese": "　　 “<Vivo in somno. Solitarie putresco in inferis|@p6/私は眠りの中で生きている。ひとりきりで土の中で腐っていく。>.",
+      "expected_chinese": "　　“<Vivo in somno. Solitarie putresco in inferis|我活在睡梦之中。孤独地在土中腐朽。>.",
+      "replacement": "　　“我活在睡梦之中。孤独地在土中腐朽。",
+      "reason": "中文句号已在注音里，移除转成中文后重复的拉丁句点。"
+    }
+  ]
+}
