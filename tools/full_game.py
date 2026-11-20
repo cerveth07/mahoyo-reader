@@ -129,8 +129,8 @@ def words_for(engine, notes, source, key, supplemental=None, edits=(), notes_by_
             reading += 'み'
             end += 1
         if reading.strip('・'):
-            meaning = supplemental.original_meaning(term) if supplemental else ''
-            words.append((start, end, term, reading, '原作注音', meaning, '原作', ''))
+            pos, meaning, pitch = supplemental.original_card(term, reading) if supplemental else ('原作注音', '', '')
+            words.append((start, end, term, reading, pos, meaning, '原作', pitch))
         else:
             words.append((start, end, term, '', '原作傍点', '原作用傍点强调此处。', '原作', ''))
     if edits:

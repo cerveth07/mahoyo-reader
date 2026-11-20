@@ -153,6 +153,7 @@ class ReadingWords:
         self.entries = {term:(reading,'名词 · 人名','') for term,reading in data['names'].items()}
         self.entries.update({term:(reading,'',meaning) for term,(reading,meaning) in data['words'].items()})
         self.by_key = {int(key):terms for key,terms in data['by_key'].items()}
+        self.authored_cards = data['authored_cards']
         self.common = self.pattern(self.entries)
 
     @staticmethod
@@ -183,8 +184,12 @@ class ReadingWords:
         if needed:
             raise ValueError(f'Unresolved Han readings at key {key}, offsets {sorted(needed)}: {body!r}')
 
-    def original_meaning(self, term):
-        return self.entries[term][2] if term in self.entries else ''
+    def original_card(self, term, reading):
+        reviewed = self.authored_cards.get(term, {}).get(reading)
+        if reviewed:
+            return reviewed
+        meaning = self.entries[term][2] if term in self.entries else ''
+        return '原作注音', meaning, ''
 
     def kana_number(self, term):
         if term.isdecimal() or re.fullmatch(r'[0-9０-９]+[万億]', term):

@@ -29,7 +29,11 @@ bool refreshPersonal(){
             std::array<uint8_t,32> bytes{};if(!sha256File((modRoot+L"\\local\\story.dat").c_str(),bytes))return false;
             const wchar_t* hex=L"0123456789abcdef";for(auto b:bytes){personalStoryHash+=hex[b>>4];personalStoryHash+=hex[b&15];}
         }
-        if(r.s()!=personalStoryHash)return false;
+        const auto revision=r.s();
+        // This release only enriches one authored card; all stored story spans and note identities are identical.
+        const bool priorCardEdition=personalStoryHash==L"3abadd75344a5c144d32b34571bf564f9ed58fada0c07367d602351cfa2f9003" &&
+            revision==L"a76f02950c4c157a1f22db8786ea2bd0d32601a5d5833066b6f88f17b09994e2";
+        if(revision!=personalStoryHash && !priorCardEdition)return false;
         auto json=r.u();if(json>r.b.size()-r.p)return false;r.p+=json;
         auto count=r.u();if(count>100000)return false;
         std::vector<PersonalNote> notes;notes.reserve(count);

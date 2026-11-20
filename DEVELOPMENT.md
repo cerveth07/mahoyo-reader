@@ -25,6 +25,6 @@
 
 只修改程序时，使用玩家发布包即可。需要重新生成语料或调整词条时，按 `corpus/manifest.json` 确认输入的数据版本。三份完整原始输入放在本机的 `corpus/steam-ja.ctd`、`corpus/sumisora-steam-zh.txt`、`corpus/anki-jlpt-n1-n2.json`。分句、读音和词卡的编辑数据在 `layout-audit/manual-plans.json` 和 `data-prep/` 中。
 
-安装 `requirements-build.txt` 中固定版本的 Sudachi 依赖。将 Noto Serif SC Medium 放入 `assets/fonts/NotoSerifSC-Medium.ttf`，将读本内置辞书放入 `assets/dictionaries/shogakukan.zip`，将玩家包的可选词典放入 `dist/mahoyo-ja-zh-optional.zip`。这些发布数据也可从同版玩家 ZIP 的数据准备步骤取得。准备好原始输入后，在构建命令中省略 `-PlayerZip`，即可重建语料和词索引，并逐键与原表比对。
+安装 `requirements-build.txt` 中固定版本的 Sudachi 依赖。将 Noto Serif SC Medium 放入 `assets/fonts/NotoSerifSC-Medium.ttf`，将读本内置辞书放入 `assets/dictionaries/shogakukan.zip`，将玩家包的可选词典放入 `dist/mahoyo-ja-zh-optional.zip`。这些发布数据也可从同版玩家 ZIP 的数据准备步骤取得。干净检出缺少随包来源说明时，先在 Windows PowerShell 运行 `.\tools\Prepare-ReleaseData.ps1 -PlayerZip <同版玩家ZIP路径>`，脚本会验证并提取 `package/license-research.md`。准备好原始输入后，在构建命令中省略 `-PlayerZip`，即可重建语料和词索引，并逐键与原表比对。
 
-重建小学馆索引使用 `tools/pack_shogakukan.py <CATALOG路径> --ebwin <EBWin4.exe路径>`。该工具校验四个辞书原文件，保留其原始字节，再生成读本离线使用的查词索引。Tomoshi 可选包由 `tools/pack_optional_dictionary.py` 生成。学习数据随 MOD 分发，各项素材的版权及许可见[来源说明](license-research.md)。
+重建小学馆索引使用 `tools/pack_shogakukan.py <CATALOG路径> --ebwin <EBWin4.exe路径>`。该工具校验四个辞书原文件，保留其原始字节，再生成读本离线使用的查词索引。Tomoshi 可选包由 `tools/pack_optional_dictionary.py` 生成。学习数据随 MOD 分发，各项素材的版权及许可见玩家 ZIP 中的 `license-research.md`。

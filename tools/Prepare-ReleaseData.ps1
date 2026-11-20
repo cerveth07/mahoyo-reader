@@ -29,6 +29,9 @@ try {
             if($name -eq 'mahoyo-ja-zh-optional.zip'){
                 $data=Read-Member $outer ('可选词典/'+$name)
                 $dest=Join-Path $root ('dist/'+$name)
+            } elseif($name -eq 'license-research.md'){
+                $data=Read-Member $outer $name
+                $dest=Join-Path $root ('package/'+$name)
             } else {
                 $data=Read-Member $payload ('mahoyo-yomibito/mahoyo-learning/local/'+$name)
                 $dest=Join-Path $root ('package/mahoyo-learning/local/'+$name)

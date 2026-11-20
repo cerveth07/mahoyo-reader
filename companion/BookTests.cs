@@ -64,6 +64,9 @@ namespace Mahoyo.Book {
                     Check(!BookMailbox.Forward(temp,new[]{"--import","0"}),"interactive mailbox accepts only reader actions");
                 }
                 var c=new Corpus(args[0]);Check(c.Rows.Length==24134,"full script");var book=new Notebook(temp,c);
+                var sentinel=c.Select(19734,16,18);
+                Check(sentinel.Kana=="センチネル" && sentinel.Pos=="名词" && sentinel.Hint=="卫兵、哨兵。" &&
+                    sentinel.Signature=="C衛兵\u001fセンチネル\u001f原作注音","authored sentinel retains the old notebook identity");
                 var mi=Word(c,138,"見上げ");var again=Word(c,3293,"見上げる");
                 Check(mi.Signature==again.Signature&&mi.Kana=="みあげる","verb lemma and reading");
                 Check(Word(c,1894,"見上げて").Signature==mi.Signature,"editing the full te-form reopens the same word");

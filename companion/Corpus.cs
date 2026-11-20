@@ -163,6 +163,10 @@ namespace Mahoyo.Book {
             }
             return output.OrderByDescending(s=>s.B-s.A).ToList();
         }
-        internal static string CardKey(Card c){return "C"+c.Term+"\u001f"+c.Kana+"\u001f"+c.Pos;}
+        internal static string CardKey(Card c){
+            // Authored readings keep the identity used by existing notebooks when their display POS is refined.
+            string keyPos=c.Level=="原作" && !String.IsNullOrEmpty(c.Kana) ? "原作注音" : c.Pos;
+            return "C"+c.Term+"\u001f"+c.Kana+"\u001f"+keyPos;
+        }
     }
 }

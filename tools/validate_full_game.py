@@ -234,6 +234,8 @@ def validate(baseline=None):
             assert denied[index] not in [x[0] for x in found]
         if index == 1:
             assert any(x[0]=='厳か' and 'しずか（原作）' in x[1] for x in found)
+        if index == 19734:
+            assert (16,18,'衛兵','センチネル','名词','卫兵、哨兵。','原作','①') in [tuple(w) for w in words]
         if index == 1096:
             assert any(x[0]=='もくもく' and '默默' in x[2] for x in found)
         if index == 4165:

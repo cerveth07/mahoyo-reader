@@ -148,6 +148,17 @@ bool readingFrameRegression(){
     if(head==concerned.words.end())return false;
     auto te=displayedForm(concerned,*head);
     ok&=te.term==L"気遣って"&&te.reading==L"きづかって"&&te.end==10&&wordActionLabel(te)==L"加入生词本";
+    const auto& authored=records.at(19734).words;
+    const Word* sentinel=nullptr;
+    for(const auto& w:authored)if(w.start<=16 && w.end>16 && preferredWord(w,sentinel))sentinel=&w;
+    if(!sentinel || sentinel->start!=16 || sentinel->end!=18 || sentinel->term!=L"衛兵" ||
+       sentinel->reading!=L"センチネル" || sentinel->pos!=L"名词" || sentinel->definition!=L"卫兵、哨兵。" ||
+       sentinel->level!=L"原作" || sentinel->pitch!=L"①" || readingBubble(*sentinel))return false;
+    std::vector<bool> sentinelPitch;bool particleHigh=true;
+    ok&=mh::pitchPattern(sentinel->reading,sentinel->pitch,sentinelPitch,particleHigh) &&
+        sentinelPitch==std::vector<bool>{true,false,false,false,false} && !particleHigh;
+    ok&=wordActionLabel(*sentinel)==L"加入生词本" && setTooltip(device,*sentinel,100,mh::CardContent::Word);
+    ok&=tooltipTexture && editInCard.r>editInCard.l && rangeInCard.r>rangeInCard.l && saveInCard.r>saveInCard.l;
     auto start=GetTickCount64();
     // Sample the actual D3D sampling and blend state on an opaque two-cell caption.
     auto sample=[&](int x,int y){

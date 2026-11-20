@@ -28,7 +28,13 @@ try {
     Copy-Item -LiteralPath config/settings.ini -Destination package/mahoyo-learning/settings.ini -Force
     & $Python write_package_manifest.py; if($LASTEXITCODE){throw 'Manifest build failed'}
     Copy-Item docs/player-guide.md package/README.md -Force
-    Copy-Item LICENSE,license-research.md package -Force
+    Copy-Item LICENSE package -Force
+    if(!$PlayerZip -and (Test-Path -LiteralPath 'license-research.md')){
+        Copy-Item -LiteralPath 'license-research.md' -Destination package -Force
+    }
+    if(!(Test-Path -LiteralPath 'package/license-research.md')){
+        throw 'Prepare the source notice from the player ZIP before packaging.'
+    }
     New-Item -ItemType Directory -Force package/licenses | Out-Null
     Copy-Item licenses/MinHook-LICENSE.txt,licenses/NotoSerifSC-OFL.txt package/licenses -Force
     & $Python tools/pack_full_game.py; if($LASTEXITCODE){throw 'ZIP creation failed'}

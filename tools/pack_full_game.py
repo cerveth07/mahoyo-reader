@@ -37,7 +37,7 @@ if __name__ == '__main__':
                    ('玩家指南.md', root/'docs/player-guide.md'),
                    ('可选词典/mahoyo-ja-zh-optional.zip', dist/'mahoyo-ja-zh-optional.zip')]
         for name in ['LICENSE', 'license-research.md', 'licenses/MinHook-LICENSE.txt', 'licenses/NotoSerifSC-OFL.txt']:
-            members.append((name, root/name))
+            members.append((name, root/'package'/name))
         write_zip(dist/'魔夜读本-Windows全游戏版.zip', members)
     else:
         write_zip(dist/'mahoyo-yomibito-full.zip',
